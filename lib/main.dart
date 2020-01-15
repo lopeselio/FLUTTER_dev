@@ -10,10 +10,7 @@ void main() => runApp(MyApp());
 
 class MyApp extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return _MyAppState();
-  }
+  State<StatefulWidget> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
@@ -65,6 +62,8 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _questionIndex = _questionIndex + 1;
     });
+    // print(_questionIndex);
+    // print(_questions[_questionIndex]);
     print(_questionIndex);
     if (_questionIndex < _questions.length) {
       print('We have more questions!');
